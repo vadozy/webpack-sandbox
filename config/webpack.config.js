@@ -9,7 +9,12 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    publicPath: '/'
+  },
+  devtool: 'inline-source-map', // devtool is bad for production
+  devServer: {
+    port: 9000
   },
   plugins: [
     new CleanWebpackPlugin(),
