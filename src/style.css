@@ -1,0 +1,21 @@
+.hello {
+  color: red;
+  background: url('./icon.jpg');
+  height: 100px;
+  font-family: 'Montserrat';
+}
+
+.yellow-bg-20px {
+  background-color: yellow;
+  font-size: 20px;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('./montserrat-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./montserrat-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
